@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ff0"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtEditContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/update_content"
+        android:textColor="#f0f0"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText 
+        android:id="@+id/etEditContent"
+        android:hint="@string/write_content_here"
+        android:layout_below="@+id/txtEditContent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    
+    <Button 
+	    android:id="@+id/btnEditContent"
+	    android:text="@string/confirm"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/etEditContent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    
+	 <Button 
+	    android:id="@+id/btnEditExit"
+        android:text="@string/cancel"
+        android:layout_toRightOf="@+id/btnEditContent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/etEditContent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ghi chú thời khóa biểu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Cài đặt</string>
+    
+    <string name="account">Tài khoản</string>
+    <string name="password">Mật khẩu</string>
+    <string name="log_in">Đăng nhập</string>
+    <string name="registration">Đăng ký</string>
+    <string name="enter_account">Nhập tài khoản </string>
+    <string name="enter_password">Nhập mật khẩu</string>
+    <string name="exit">Thoát</string>
+    <string name="title_activity_login">Giao diện đăng nhập</string>
+    <string name="title_activity_register">Giao diện đăng ký</string>
+    <string name="more">Thêm</string>
+    <string name="cancel">Hủy</string>
+	<string name="add_content">Thêm nội dung</string>
+    <string name="write_content_here">Ghi nội dung vào đây</string>
+    <string name="update_content">Cập nhật nội dung</string>
+    <string name="confirm">Xác nhận</string>
+	<string name="email">Email</string>
+	
+	<string name="notnull">Vui lòng điền đầy đủ thông tin</string>
+	<string name="logged_in_successfully">Đăng nhập thành công</string>
+	<string name="wrong_account_or_password">Sai tài khoản hoặc mật khẩu!</string>
+	<string name="please_enter_content">Vui lòng nhập nội dung!</string>
+	<string name="added_successfully">Thêm thành công.</string>
+	<string name="the_update_was_successful">Cập nhật thành công.</string>
+	<string name="are_you_sure">Bạn chắc chứ?</string>
+	<string name="deleted_successfully">Xóa thành công.</string>
+	<string name="yes">Có</string>
+	<string name="no">Không</string>
+	<string name="Registered_successfully">Đăng ký thành công.</string>
+</resources>

@@ -1,0 +1,55 @@
+package com.example.ghichu;
+
+import android.app.Activity;
+import android.database.Cursor;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+
+public class MainActivity extends Activity {
+
+	Database database;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //create database note
+        database = new Database(this, "ghichu.sqlite", null, 1);
+        
+        //create table
+        database.QueryData("CREATE TABLE IF NOT EXISTS CongViec(Id INTEGER PRIMARY KEY AUTOINCREMENT, TenCV VARCHAR(200)");
+        
+        //insert data
+        //database.QueryData("INSERT INTO CongViec VALUES(null, 'Ngủ đi')");
+        
+        //select data
+        //Cursor dataCongViec = database.GetData("Select * FROM CongViec");
+        //while (dataCongViec.moveToNext()) {
+			//String ten = dataCongViec.getString(1);
+			//Toast.makeText(this, ten, Toast.LENGTH_SHORT).show();
+			
+		//}
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+}
